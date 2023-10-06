@@ -50,7 +50,7 @@ exports.create = (req, res) => {
     pilih_layanan: req.body.pilih_layanan,
   };
   const dataEmail = {
-    from: 'dillafadila11@gmail.com',
+    from: 'talkspace34@gmail.com',
     to: req.body.email,
     subject: 'Test Pendaftaran Konseling',
     text: `
