@@ -18,7 +18,7 @@ const Konseling = sequelize.define('konseling', {
     tanggal_konseling: {
         type: DataTypes.DATEONLY,
     },
-    pilih_layanan: {
+    layanan: {
         type: DataTypes.TEXT,
     },
 });

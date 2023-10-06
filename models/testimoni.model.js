@@ -6,7 +6,10 @@ const Testimoni = sequelize.define('testimoni', {
     nama_lengkap: {
         type: DataTypes.STRING,
     },
-    pilih_layanan: {
+    email: {
+        type: DataTypes.STRING,
+    },
+    layanan: {
         type: DataTypes.TEXT,
     },
     review: {
