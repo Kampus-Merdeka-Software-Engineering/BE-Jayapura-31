@@ -12,7 +12,8 @@ exports.create = (req, res) => {
   // mengambil data yang dikirimkan oleh client
   const testimoni = {
     nama_lengkap: req.body.nama_lengkap,
-    pilih_layanan: req.body.pilih_layanan,
+    email: req.body.email,
+    layanan: req.body.layanan,
     review: req.body.review,
   };
 
