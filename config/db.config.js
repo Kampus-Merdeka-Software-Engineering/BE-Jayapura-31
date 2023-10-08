@@ -1,15 +1,3 @@
-//const { Sequelize } = require('sequelize');
-
-//const { Sequelize } = require("sequelize");
-
- //Replace 'your-database-name', 'your-username', and 'your-password' with your actual database details
-//const sequelize = new Sequelize('DB-Jayapura-31', 'avnadmin', 'AVNS_oxuen7J32drJFXNfyb4', {
- //host: 'jayapura31',
- //dialect: 'mysql', // Adjust to your database type (e.g., 'mysql', 'postgres', 'sqlite')
-//});
-
-//module.exports = sequelize;
-
 const { Sequelize } = require('sequelize')
 const mysql = require('mysql2')
 const fs = require('fs')
