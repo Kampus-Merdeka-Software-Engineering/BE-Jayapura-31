@@ -52,15 +52,22 @@ exports.create = (req, res) => {
   const dataEmail = {
     from: 'talkspace34@gmail.com',
     to: req.body.email,
-    subject: 'Test Pendaftaran Konseling',
+    subject: 'Hallo, TalkSpace Member!',
     text: `
-    Hallo
+    Selamat Datang Di TalkSpace!
+
+
+    Terimakasih telah melakukan pemesanan konseling di Talk Space. Sesi konsultasi akan dilakukannya melalui WhatsApp dan konselor akan menghubungi sesuai jadwal yang telah ditentukan.
+    Berikut informasi diri anda 
+
     Nama Lengkap: ${konseling.nama_lengkap}
     Usia : ${konseling.usia}
     Tanggal Konsultasi : ${konseling.tanggal_konseling}
     Jenis Layanan : ${konseling.layanan}
-    Konselor : ${konselor}
-    Telah berhasil booking di layanan Talk Space. Sesi konsultasi akan dilakukan melalui WhatsApp dan akan kami hubungi sesuai dengan tanggal yang telah ditentukan.`, // Email body
+    Konselor : ${konselor} 
+    
+    Selamat menjadi lebih baik!
+    Tim TalkSpace.`, // Email body
   };
   //check existing tanggal konseling
   const tanggal_konseling = konseling.tanggal_konseling
