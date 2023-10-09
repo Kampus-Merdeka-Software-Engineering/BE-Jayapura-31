@@ -69,13 +69,7 @@ exports.create = (req, res) => {
     Selamat menjadi lebih baik!
     Tim TalkSpace.`, // Email body
   };
-  //check existing tanggal konseling
-  //const tanggal_konseling = konseling.tanggal_konseling
- // Konseling.findOne({ where: { tanggal_konseling } })
- // .then((checkTanggal) => {
- //   if (checkTanggal) {
- //     return res.status(400).json({ error: 'Tanggal konseling duplikat, silahkan pilih tanggal lain' });
- //  }
+ 
 
     // proses menyimpan kedalam database
     Konseling.create(konseling)
@@ -99,11 +93,7 @@ exports.create = (req, res) => {
       });
     });
 
- // })
- // .catch((error) => {
- //   console.error('error:', error);
- //   return res.status(500).json({ error: 'Internal server error' });
- // });
+
 };
 
 // READ: menampilkan semua konseling

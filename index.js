@@ -16,7 +16,7 @@ sequelize.sync({ force: false }).then(() => {
   });
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('TalkSpace !');
 });
 
 app.use('/api/testimoni', testimoniRoute);
