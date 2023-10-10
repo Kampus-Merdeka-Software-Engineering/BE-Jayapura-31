@@ -22,4 +22,4 @@ app.get('/', (req, res) => {
 app.use('/api/testimoni', testimoniRoute);
 app.use('/api/konseling', konselingRoute);
 
-app.listen(port, () => console.log(`App listening on port http://localhost:${port}!`));
+app.listen(port, '0.0.0.0', () => console.log(`App listening on port http://localhost:${port}!`));
